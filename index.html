@@ -8,38 +8,44 @@
 <body>
 	<!--HEADER-->
 	<header>
-		<nav>
-			<img src="resources/images/logo-white.png">
+		<nav class="container">
+			<div class="logo">
+				<img src="resources/images/logo-white.png">
+				<a href="#">Tortoiseshell Optics</a>
+			</div>
 			<ul>
-				<li><a href="#">Tortoiseshell Optics</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class="menu"><a href="#">Menu</a></li>
+				<li class="menu-item"><a href="#">Services</a></li>
+				<li class="menu-item"><a href="#">Products</a></li>
+				<li class="menu-item"><a href="#">Contact</a></li>
 			</ul>
 		</nav>
-		<div class="hero-block">
-			<h1>Don't Just Look, See.</h1>
+		<div class="flex container">
+			<div class="hero-block">
+				<h1>Don't Just Look, See.</h1>
+			</div>
 		</div>
+		
 	</header>
 
 	<!--SECTION BENEFITS-->
-	<section class="benefits">
-		<div class="benefit">
+	<section class="container benefits">
+		<div class="benefit exam">
 			<img src="resources/images/paper-icon.png">
-			<h1>Comprehensive Exam</h1>
+			<h2>Comprehensive Exam</h2>
 		</div>
-		<div class="benefit">
+		<div class="benefit fitting">
 			<img src="resources/images/ruler-icon.png">
-			<h1>Custom Fittings</h1>
+			<h2>Custom Fittings</h2>
 		</div>
-		<div class="benefit">
-			<img src="resources/truck-icon.png">
-			<h1>Fast Delivery</h1>
+		<div class="benefit delivery">
+			<img src="resources/images/truck-icon.png">
+			<h2>Fast Delivery</h2>
 		</div>
 	</section>
 
 	<!--SECTION PHILOSOPHY & APPOINTMENTS-->
-	<section >
+	<section class="container details">
 		<div class="detail">
 			<h1>Philosophy</h1>
 			<p>Over 75% of our brains are dedicated to one sense: vision. We believe everyone deserves to see the world, not matter what. That’s why we offer eye exams, custom fittings, and quick delivery at a low cost. It’s your vision that makes ours.</p>
@@ -51,7 +57,7 @@
 	</section>
 
 	<!--FOOTER-->
-	<footer>
+	<footer class="container">
 		<img src="resources/images/logo-black.png">
 		<p>Copyright Tortoiseshell Optics</p>
 	</footer>

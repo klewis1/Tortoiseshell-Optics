@@ -1,0 +1,263 @@
+html {
+	font-size: 18px;
+	font-family: helvetica;
+	line-height: 1.4;
+
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+h1 {
+	text-transform: uppercase;
+
+}
+
+/*---------HEADER---------*/
+
+header {
+	background: url('images/glasses-bg.png') no-repeat center center;
+	background-size: cover;
+	height: 30rem;
+	padding-top: 1rem
+}
+
+header img {
+	height: 1.5rem;
+	margin: 0 1rem 0 2rem;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+
+nav {
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1rem;
+}
+
+li {
+	padding-left:2rem;
+}
+
+li.menu {
+	visibility: hidden;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hero-block {
+	display: inline-flex;
+	padding: 1.5rem 5rem;
+	margin-top: 10rem;
+	margin-right: -2rem;
+	background-color:white;
+	font-size: 2rem;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+/*---------BENEFITS---------*/
+.benefits {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8rem;
+	margin: 3rem auto;
+}
+
+.benefit {
+	text-align: center;
+	margin: 0 3rem;
+}
+
+.benefit img {
+	margin-bottom: 1rem;
+}
+
+.exam img{
+	width: 3.5rem;
+}
+
+.fitting img{
+	width: 5rem;
+}
+
+.delivery img {
+	width: 5rem;
+}
+
+/*---------PHILOSOPHY & APPOINTMENTS---------*/
+.details {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+
+.detail {
+	margin: auto 5%;
+	width: 35%;
+}
+
+.detail h1 {
+	width: 10rem;
+	padding: 0.5rem 1.25rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+	background-color: cadetblue;
+}
+
+/*---------FOOTER---------*/
+footer {
+	background-color: azure;
+	padding: 4rem;
+	display: flex;
+	align-items: center;
+}
+
+footer img {
+	height: 1.5rem;
+	padding-right: 1rem;
+}
+
+/*---------MEDIA SCREEN MAX-WIDTH 1024px---------*/
+@media screen and (max-width: 1024px){
+
+	.container {
+		width: 100%;
+	}
+
+	/*---------HEADER---------*/
+	
+	header {
+		padding-top: 0;
+		height: 22rem;
+	}
+
+	.hero-block {
+		padding: 0.75rem 4rem;
+		margin-top: 5rem;
+		margin-right: 2rem;
+		font-size: 1.33rem;
+	}
+
+	.hero-block h1 {
+		margin: .25rem 0;
+	}
+}
+
+/*---------MEDIA SCREEN MAX-WIDTH 768px---------*/
+@media screen and (max-width: 768px) {
+
+	/*---------HEADER---------*/
+	
+	header {
+		background-position: 40%;
+	}
+
+	li.menu {
+		visibility: visible; 
+	}
+
+	li.menu-item {
+		display: none;
+	}
+
+}
+
+
+/*---------MEDIA SCREEN MAX-WIDTH 480px---------*/
+@media screen and (max-width: 480px) {
+
+	/*---------HEADER---------*/
+
+	header {
+	background-position: 20%;
+	height: 17rem;
+	}
+
+	.flex {
+		display: block;
+	}
+
+	.hero-block {
+		display: block;
+		padding: 1rem;
+		margin: 9rem 0 0 0 ;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	/*---------BENEFITS---------*/
+
+	.benefits {
+		margin: 3.77rem 0;
+		display: block;
+		height: 100%;
+	}
+
+	.benefit {
+		margin-top: 1.54rem;
+	}
+
+	.benefit h2 {
+		font-size: 0.77rem;
+	}
+
+	/*---------DETAILS---------*/
+
+	.details {
+		display: block;		
+		overflow: hidden;
+	}
+
+	.detail {
+		width: 100%;
+		margin:0;
+	}
+
+	.detail h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.detail p {
+		margin: 1rem 0.75rem 4rem 0.75rem;
+		font-size: 0.77rem;
+	}
+
+	/*---------FOOTER---------*/
+	footer {
+		margin: 0 auto; 
+		padding: 4rem 0;
+		justify-content: center;
+	}
+
+	footer p {
+		display: none;
+	}
+
+}
